@@ -1,3 +1,12 @@
+.page-style {
+    background: conic-gradient(
+      from 218deg at 30vw 50%,
+      rgba(155, 51, 55, 1) 100deg,
+      rgba(255, 255, 255, 0.1) 100deg
+    );
+    background-blend-mode: normal;
+  }
+
 .profile-container {
     display: flex;
     align-items: center;
@@ -11,7 +20,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #0073e6;
+    background-color: rgba(155, 51, 55, 1) 100deg,;
 }
 
 .camera-icon {
@@ -19,7 +28,46 @@
     font-size: 30px;
 }
 
-.labels-container {
+.hexagonal-card {
+    width: 260px; /* Define un ancho fijo en píxeles */
+    height: 290px; /* Define una altura fija en píxeles */
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-color: #fff;
+    margin: 0 auto; /* Centra horizontalmente */
+    transform: rotate(-90deg); /* Rota el hexágono 180 grados */
+    display: flex; /* Hace que el contenido sea un contenedor flex */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    
+  }
+
+  .hexagonal-card::before {
+    content: '';
+    position: absolute;
+    width: 98%;
+    height: 98%;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-color: rgba(155, 51, 55);
+    z-index: -1;
+}
+
+.center-vertically {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hexagonal-content {
+    transform: rotate(90deg); /* Contrarresta la rotación del hexágono */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hexagonal-card .hexagonal-content {
+    z-index: 1;
+  }
+  .labels-container {
     width: 50%;
     height: 100%;
     display: flex;
@@ -44,3 +92,95 @@
     border-radius: 20px;
     margin: 20px;
 }
+
+.divider {
+  border-top: 2px solid rgba(155, 51, 55); /* Establece el grosor y el color de la línea */
+  width: 100%;
+  margin: 2px 0; /* Agrega margen superior e inferior para espaciado */
+  position: relative;
+}
+
+.divider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgba(155, 51, 55);
+  filter: blur(5px); /* Agrega un efecto de desenfoque para simular un estilo tipo "neon" */
+}  
+  
+.custom-list {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  --background: rgb(155,51,55, 0.1);
+  box-shadow: inset 0 0 15px rgba(155, 51, 55, 0.5);
+  border-radius: 5px;
+  
+}
+
+.custom-list-item {
+
+  --background: rgb(155, 51, 55, 28%);
+  padding: 5px 10px;
+  color: #fff;
+  margin: 5px 0;
+  transition: 0.5s;
+}
+
+.custom-list-item:nth-child(1) {
+  background: rgba(155, 51, 55, 0.2);
+}
+
+.custom-list-item:nth-child(2) {
+  background: rgba(155, 51, 55, 0.4);
+}
+
+.custom-list-item:nth-child(3) {
+  background: rgba(155, 51, 55, 0.6);
+}
+
+.custom-list-item span:nth-child(1) {
+  width: 30px;
+}
+
+.custom-list-item span:nth-child(2) {
+  width: 30px;
+}
+
+.custom-list-item span:nth-child(3) {
+  width: 30px;
+  text-align: right;
+}
+
+.custom-list-item span:nth-child(4) {
+  width: 70px;
+  text-align: right;
+}
+
+.custom-list-item:hover {
+  transform: scale(1.03);
+  background: linear-gradient(100deg, rgba(155, 51, 55, 0.1));
+}
+  
+/* CSS personalizado */
+.custom-icon {
+  font-size: 24px;
+  transition: color 0.3s;
+
+}
+
+/* Color verde para el icono de edición */
+.custom-icon.edit {
+  color: green;
+}
+
+/* Color rojo para el icono de eliminación */
+.custom-icon.delete{
+  color: rgba(155, 51, 70);
+}
+
