@@ -4,6 +4,7 @@
         "nombre": "Producto 1",
         "descripcion": "Descripción del producto 1",
         "precio": 10.99,
+        "stock": 10,
         "imagen": "public/assets/products/tarjetas/tarjeta-1.png"
     },
     {
@@ -11,6 +12,7 @@
         "nombre": "Producto 2",
         "descripcion": "Descripción del producto 2",
         "precio": 20.99,
+        "stock": 10,
         "imagen": "public/assets/products/tarjetas/tarjeta-2.png"
     },
     {
@@ -18,6 +20,7 @@
         "nombre": "Producto 3",
         "descripcion": "Descripción del producto 3",
         "precio": 30.99,
+        "stock": 10,
         "imagen": "public/assets/products/tarjetas/tarjeta-3.png"
     },
     {
@@ -25,6 +28,7 @@
         "nombre": "Producto 1",
         "descripcion": "Descripción del producto 1",
         "precio": 10.99,
+        "stock": 10,
         "imagen": "public/assets/products/tarjetas/tarjeta-4.png"
     },
     {
@@ -32,6 +36,7 @@
         "nombre": "Producto 2",
         "descripcion": "Descripción del producto 2",
         "precio": 20.99,
+        "stock": 10,
         "imagen": "public/assets/products/tarjetas/tarjeta-5.png"
     },
     {
@@ -39,6 +44,7 @@
         "nombre": "Producto 3",
         "descripcion": "Descripción del producto 3",
         "precio": 30.99,
+        "stock": 10,
         "imagen": "public/assets/products/tarjetas/tarjeta-6.png"
     },
     {
@@ -46,6 +52,7 @@
         "nombre": "Producto 1",
         "descripcion": "Descripción del producto 1",
         "precio": 10.99,
+        "stock": 10,
         "imagen": "public/assets/products/tarjetas/tarjeta-7.png"
     }
 ]

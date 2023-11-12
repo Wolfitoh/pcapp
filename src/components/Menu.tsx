@@ -68,7 +68,7 @@ const Menu: React.FC = () => {
   const location = useLocation();
 
   return (
-    <IonMenu contentId="main" type="overlay" max-width="200">
+    <IonMenu menuId='menu-user' contentId="main" type="overlay" side="end" max-width="200">
       <IonContent>
         <IonGrid>
           <IonRow>
