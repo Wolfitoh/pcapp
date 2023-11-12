@@ -2,6 +2,7 @@ import { IonApp, IonRouterOutlet, IonSplitPane, setupIonicReact } from '@ionic/r
 import { IonReactRouter } from '@ionic/react-router';
 import { Redirect, Route } from 'react-router-dom';
 import Menu from './components/Menu';
+import MenuPrincipal from './components/MenuPrincipal';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -31,8 +32,9 @@ const App: React.FC = () => {
   return (
     <IonApp>
       <IonReactRouter>
-        <IonSplitPane contentId="main" max-width="100">
+        <IonSplitPane contentId="main" max-width="100" disabled={true}>
           <Menu />
+          <MenuPrincipal />
           <IonRouterOutlet id="main">
             <Route path="/" exact={true}>
               <Redirect to="/principal" />

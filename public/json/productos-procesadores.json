@@ -4,6 +4,7 @@
         "nombre": "Producto 1",
         "descripcion": "Descripción del producto 1",
         "precio": 10.99,
+        "stock": 10,
         "imagen": "public/assets/products/procesadores/procesador-1.png"
     },
     {
@@ -11,6 +12,7 @@
         "nombre": "Producto 2",
         "descripcion": "Descripción del producto 2",
         "precio": 20.99,
+        "stock": 10,
         "imagen": "public/assets/products/procesadores/procesador-2.png"
     },
     {
@@ -18,6 +20,7 @@
         "nombre": "Producto 3",
         "descripcion": "Descripción del producto 3",
         "precio": 30.99,
+        "stock": 10,
         "imagen": "public/assets/products/procesadores/procesador-3.png"
     },
     {
@@ -25,6 +28,7 @@
         "nombre": "Producto 1",
         "descripcion": "Descripción del producto 1",
         "precio": 10.99,
+        "stock": 10,
         "imagen": "public/assets/products/procesadores/procesador-4.png"
     },
     {
@@ -32,6 +36,7 @@
         "nombre": "Producto 2",
         "descripcion": "Descripción del producto 2",
         "precio": 20.99,
+        "stock": 10,
         "imagen": "public/assets/products/procesadores/procesador-5.png"
     },
     {
@@ -39,6 +44,7 @@
         "nombre": "Producto 3",
         "descripcion": "Descripción del producto 3",
         "precio": 30.99,
+        "stock": 10,
         "imagen": "public/assets/products/procesadores/procesador-6.png"
     },
     {
@@ -46,6 +52,7 @@
         "nombre": "Producto 1",
         "descripcion": "Descripción del producto 1",
         "precio": 10.99,
+        "stock": 10,
         "imagen": "public/assets/products/procesadores/procesador-7.png"
     },
     {
@@ -53,6 +60,7 @@
         "nombre": "Producto 2",
         "descripcion": "Descripción del producto 2",
         "precio": 20.99,
+        "stock": 10,
         "imagen": "public/assets/products/procesadores/procesador-8.png"
     },
     {
@@ -60,6 +68,7 @@
         "nombre": "Producto 3",
         "descripcion": "Descripción del producto 3",
         "precio": 30.99,
+        "stock": 10,
         "imagen": "public/assets/products/procesadores/procesador-9.png"
     },
     {
@@ -67,6 +76,7 @@
         "nombre": "Producto 3",
         "descripcion": "Descripción del producto 3",
         "precio": 30.99,
+        "stock": 10,
         "imagen": "public/assets/products/procesadores/procesador-10.png"
     }
 ]
