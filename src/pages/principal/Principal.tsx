@@ -1,5 +1,4 @@
-import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonToolbar, IonIcon, IonButton, IonSearchbar } from '@ionic/react';
-import { cartOutline, person, personOutline } from 'ionicons/icons';
+import { IonButton, IonButtons, IonContent, IonHeader, IonIcon, IonMenuButton, IonPage, IonSearchbar, IonToolbar } from '@ionic/react';
 
 import 'swiper/css';
 import '@ionic/react/css/ionic-swiper.css';
@@ -7,13 +6,24 @@ import { useEffect, useState } from 'react';
 import { Producto } from '../../modules/productos/domain/producto';
 import ContenidoPrincipal from './components/ContenidoPrincipal';
 import BuscarProductos from './components/BuscarProductos';
+import { cartOutline, personOutline } from 'ionicons/icons';
+import { Redirect, Route, useHistory } from 'react-router-dom'; // Importamos useHistory
+
+interface PrincipalProps {
+    searchQuery: string;
+}
 
 const Principal: React.FC = () => {
     const [productosPromos, setProductosPromos] = useState<Producto[]>([]);
     const [productosNuevos, setProductosNuevos] = useState<Producto[]>([]);
     const [loadingProductosPromos, setLoadingProductosPromos] = useState<boolean>(false);
     const [loadingProductosNuevos, setLoadingProductosNuevos] = useState<boolean>(false);
-    const [searchQuery, setSearchQuery] = useState<string>('');
+    const history = useHistory(); // Inicializamos useHistory
+
+    const handleInput = (event: any) => {
+        history.push(`/search/${event.detail.value!}`);
+    };
+
 
     useEffect(() => {
         setLoadingProductosPromos(true);
@@ -37,11 +47,6 @@ const Principal: React.FC = () => {
         }, 2000);
     }, []);
 
-
-    const handleInput = (event: any) => {
-        setSearchQuery(event.detail.value!)
-    };
-
     return (
         <IonPage className='h-screen'>
             <IonHeader className="ion-no-border">
@@ -51,6 +56,7 @@ const Principal: React.FC = () => {
                     </IonButtons>
                     <div className="mx-auto">
                         <IonSearchbar
+                            animated={true}
                             className='max-w-sm mx-auto'
                             showClearButton="always"
                             placeholder='Buscar'
@@ -70,12 +76,8 @@ const Principal: React.FC = () => {
             </IonHeader>
 
             <IonContent className="ion-padding h-full">
-                {
-                    searchQuery && searchQuery.length > 0 ? (
-                        <BuscarProductos searchQuery={searchQuery} />
-                    ) : <ContenidoPrincipal productosNuevos={productosNuevos} productosPromos={productosPromos} loadingProductosNuevos={loadingProductosNuevos}
-                        loadingProductosPromos={loadingProductosPromos} />
-                }
+                <ContenidoPrincipal productosNuevos={productosNuevos} productosPromos={productosPromos} loadingProductosNuevos={loadingProductosNuevos}
+                    loadingProductosPromos={loadingProductosPromos} />
             </IonContent>
         </IonPage>
     );

@@ -1,21 +1,20 @@
 import {
     IonContent,
     IonIcon,
-    IonItem,
     IonLabel,
-    IonList,
-    IonListHeader,
     IonMenu,
-    IonMenuToggle,
     IonNote,
     IonImg,
     IonGrid,
     IonRow,
-    IonAvatar
+    IonAvatar,
+    IonHeader,
+    IonTitle,
+    IonToolbar,
+    IonButton
 } from '@ionic/react';
 
-import { useLocation } from 'react-router-dom';
-import { archiveOutline, archiveSharp, bookmarkOutline, heartOutline, heartSharp, homeOutline, homeSharp, paperPlaneOutline, paperPlaneSharp, personOutline, personSharp, callOutline, callSharp } from 'ionicons/icons';
+import { archiveOutline, archiveSharp, heartOutline, heartSharp, homeOutline, homeSharp, paperPlaneOutline, paperPlaneSharp, personOutline, personSharp, callOutline, callSharp, closeOutline, closeSharp } from 'ionicons/icons';
 import './Menu.css';
 
 interface AppPage {
@@ -65,10 +64,14 @@ const appPages: AppPage[] = [
 ];
 
 const MenuPrincipal: React.FC = () => {
-    const location = useLocation();
 
     return (
         <IonMenu menuId='menu-principal' contentId="main" type="overlay" max-width="200">
+            <IonHeader className='ion-no-border'>
+                <IonToolbar>
+                    <IonTitle>¡Bienvenido!</IonTitle>
+                </IonToolbar>
+            </IonHeader>
             <IonContent>
                 <IonGrid>
                     <IonRow>

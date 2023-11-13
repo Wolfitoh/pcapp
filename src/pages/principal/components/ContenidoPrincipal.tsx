@@ -36,7 +36,7 @@ const ContenidoPrincipal: React.FC<Props> = ({ productosPromos, productosNuevos,
     }, []);
 
     return (
-        <div className='mx-40'>
+        <div className='mx-auto w-full lg:w-11/12 xl:w-10/12'>
             <CarruselBanner />
             <div className='mt-10'>
                 <div className='float-left mb-4'>

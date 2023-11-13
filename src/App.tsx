@@ -1,6 +1,6 @@
-import { IonApp, IonRouterOutlet, IonSplitPane, setupIonicReact } from '@ionic/react';
+import { IonApp, IonButton, IonButtons, IonHeader, IonIcon, IonMenuButton, IonRouterOutlet, IonSearchbar, IonSplitPane, IonToolbar, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { Redirect, Route } from 'react-router-dom';
+import { Redirect, Route, useHistory } from 'react-router-dom'; // Importamos useHistory
 import Menu from './components/Menu';
 import MenuPrincipal from './components/MenuPrincipal';
 
@@ -24,26 +24,38 @@ import '@ionic/react/css/display.css';
 import './theme/variables.css';
 import Principal from './pages/principal/Principal';
 import Perfil from './pages/perfil/Perfil';
+import Search from './pages/search/Search';
+import { cartOutline, personOutline } from 'ionicons/icons';
+import { useState } from 'react';
 
 
 setupIonicReact();
 
 const App: React.FC = () => {
+  const [searchQuery, setSearchQuery] = useState<string>('');
+  const history = useHistory(); // Inicializamos useHistory
+
+  const handleInput = (event: any) => {
+    setSearchQuery(event.detail.value!);
+    history.push('/search'); // Redirigimos a la página deseada
+  };
+
   return (
     <IonApp>
       <IonReactRouter>
         <IonSplitPane contentId="main" max-width="100" disabled={true}>
           <Menu />
           <MenuPrincipal />
+
           <IonRouterOutlet id="main">
             <Route path="/" exact={true}>
-              <Redirect to="/principal" />
-            </Route>
-            <Route path="/principal" exact={true}>
               <Principal />
             </Route>
             <Route path="/perfil" exact={true}>
               <Perfil />
+            </Route>
+            <Route path="/search/:query" exact={true}>
+              <Search />
             </Route>
           </IonRouterOutlet>
         </IonSplitPane>

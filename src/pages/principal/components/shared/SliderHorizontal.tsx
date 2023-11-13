@@ -16,7 +16,7 @@ interface Props {
 const SliderHorizontal: React.FC<Props> = ({ productos, loading, setProducto }) => {
   return (
     <>
-      {loading && <div className="flex justify-center items-center w-full h-full" >
+      {loading && productos.length <= 0 && <div className="flex justify-center items-center w-full h-full" >
         <IonSpinner name="crescent" />
         <p className='ml-2'>Porfavor espera...</p>
       </div >}
