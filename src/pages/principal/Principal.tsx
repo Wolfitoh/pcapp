@@ -5,9 +5,8 @@ import '@ionic/react/css/ionic-swiper.css';
 import { useEffect, useState } from 'react';
 import { Producto } from '../../modules/productos/domain/producto';
 import ContenidoPrincipal from './components/ContenidoPrincipal';
-import BuscarProductos from './components/BuscarProductos';
 import { cartOutline, personOutline } from 'ionicons/icons';
-import { Redirect, Route, useHistory } from 'react-router-dom'; // Importamos useHistory
+import { useHistory } from 'react-router-dom'; // Importamos useHistory
 
 interface PrincipalProps {
     searchQuery: string;

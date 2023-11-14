@@ -27,6 +27,7 @@ import Perfil from './pages/perfil/Perfil';
 import Search from './pages/search/Search';
 import { cartOutline, personOutline } from 'ionicons/icons';
 import { useState } from 'react';
+import Login from './pages/login/Login';
 
 
 setupIonicReact();
@@ -56,6 +57,9 @@ const App: React.FC = () => {
             </Route>
             <Route path="/search/:query" exact={true}>
               <Search />
+            </Route>
+            <Route path="/login" exact={true}>
+              <Login />
             </Route>
           </IonRouterOutlet>
         </IonSplitPane>
