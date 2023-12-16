@@ -3,7 +3,23 @@
 @tailwind utilities;
 
 :root {
-    .split-pane-visible > ion-menu {
-        max-width: 304px !important;
-    }
+  .split-pane-visible > ion-menu {
+    max-width: 304px !important;
+  }
+}
+
+.truncate-text {
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--ion-color-primary);
+}
+
+.swiper .swiper-pagination-bullet {
+  background: var(--ion-color-primary);
 }

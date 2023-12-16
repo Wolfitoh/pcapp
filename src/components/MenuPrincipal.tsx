@@ -11,7 +11,10 @@ import {
     IonHeader,
     IonTitle,
     IonToolbar,
-    IonButton
+    IonButton,
+    IonList,
+    IonPopover,
+    IonItem
 } from '@ionic/react';
 
 import { archiveOutline, archiveSharp, heartOutline, heartSharp, homeOutline, homeSharp, paperPlaneOutline, paperPlaneSharp, personOutline, personSharp, callOutline, callSharp, closeOutline, closeSharp } from 'ionicons/icons';
@@ -73,6 +76,16 @@ const MenuPrincipal: React.FC = () => {
                 </IonToolbar>
             </IonHeader>
             <IonContent>
+
+                <IonList className='w-full'>
+                    <IonItem className='w-full'>
+                        <IonButton id="right-end" fill='clear' expand="full">Full</IonButton>
+                        <IonPopover trigger="right-end" side="right" alignment="end">
+                            <IonContent class="ion-padding">Hello World!</IonContent>
+                        </IonPopover>
+                    </IonItem>
+                </IonList>
+
                 <IonGrid>
                     <IonRow>
                         <IonImg class="h-20 w-20"
@@ -85,14 +98,6 @@ const MenuPrincipal: React.FC = () => {
                         <IonAvatar>
                             <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
                         </IonAvatar>
-                    </IonRow>
-
-                    <IonRow className='ion-justify-content-center'>
-                        <IonLabel>CATEGORIAS</IonLabel>
-                    </IonRow>
-
-                    <IonRow className='ion-justify-content-center'>
-                        <IonNote>hi@ionicframework.com</IonNote>
                     </IonRow>
                 </IonGrid>
             </IonContent>

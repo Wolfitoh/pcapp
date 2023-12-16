@@ -1,58 +1,82 @@
 [
-    {
-        "id": 20,
-        "nombre": "Producto 1",
-        "descripcion": "Descripción del producto 1",
-        "precio": 10.99,
-        "stock": 10,
-        "imagen": "public/assets/products/tarjetas/tarjeta-1.png"
-    },
-    {
-        "id": 21,
-        "nombre": "Producto 2",
-        "descripcion": "Descripción del producto 2",
-        "precio": 20.99,
-        "stock": 10,
-        "imagen": "public/assets/products/tarjetas/tarjeta-2.png"
-    },
-    {
-        "id": 22,
-        "nombre": "Producto 3",
-        "descripcion": "Descripción del producto 3",
-        "precio": 30.99,
-        "stock": 10,
-        "imagen": "public/assets/products/tarjetas/tarjeta-3.png"
-    },
-    {
-        "id": 23,
-        "nombre": "Producto 1",
-        "descripcion": "Descripción del producto 1",
-        "precio": 10.99,
-        "stock": 10,
-        "imagen": "public/assets/products/tarjetas/tarjeta-4.png"
-    },
-    {
-        "id": 24,
-        "nombre": "Producto 2",
-        "descripcion": "Descripción del producto 2",
-        "precio": 20.99,
-        "stock": 10,
-        "imagen": "public/assets/products/tarjetas/tarjeta-5.png"
-    },
-    {
-        "id": 25,
-        "nombre": "Producto 3",
-        "descripcion": "Descripción del producto 3",
-        "precio": 30.99,
-        "stock": 10,
-        "imagen": "public/assets/products/tarjetas/tarjeta-6.png"
-    },
-    {
-        "id": 26,
-        "nombre": "Producto 1",
-        "descripcion": "Descripción del producto 1",
-        "precio": 10.99,
-        "stock": 10,
-        "imagen": "public/assets/products/tarjetas/tarjeta-7.png"
-    }
+  {
+    "id": 20,
+    "nombre": "TECLADO MECÁNICO RGB LOGITECH G PRO X CON INTERRUPTORES GX BLUE Y LUCES PERSONALIZABLES",
+    "descripcion": "Teclado mecánico RGB Logitech G Pro X con interruptores GX Blue y luces personalizables para una experiencia de escritura y juego excepcionales.",
+    "precio": 129.99,
+    "stock": 12,
+    "imagen": "public/assets/products/tarjetas/tarjeta-1.png"
+  },
+  {
+    "id": 21,
+    "nombre": "AURICULARES INALÁMBRICOS SONY WH-1000XM4 CON CANCELACIÓN DE RUIDO Y CALIDAD DE SONIDO PREMIUM",
+    "descripcion": "Auriculares inalámbricos Sony WH-1000XM4 con cancelación de ruido y calidad de sonido premium para una experiencia auditiva inigualable.",
+    "precio": 299.99,
+    "stock": 9,
+    "imagen": "public/assets/products/tarjetas/tarjeta-2.png"
+  },
+  {
+    "id": 22,
+    "nombre": "MICRÓFONO DE CONDENSADOR BLUE YETI X CON AJUSTES DE SONIDO AVANZADOS PARA STREAMING Y GRABACIÓN",
+    "descripcion": "Micrófono de condensador Blue Yeti X con ajustes de sonido avanzados para streaming y grabación de audio de alta calidad.",
+    "precio": 169.99,
+    "stock": 15,
+    "imagen": "public/assets/products/tarjetas/tarjeta-3.png"
+  },
+  {
+    "id": 23,
+    "nombre": "SILLA GAMING SECRETLAB TITAN XL CON CUERO PU PREMIUM Y RECLINACIÓN TOTAL",
+    "descripcion": "Silla gaming Secretlab Titan XL con cuero PU premium y función de reclinación total para una comodidad excepcional durante largas sesiones de juego.",
+    "precio": 399.99,
+    "stock": 6,
+    "imagen": "public/assets/products/tarjetas/tarjeta-4.png"
+  },
+  {
+    "id": 24,
+    "nombre": "ROUTER WI-FI 6 ASUS RT-AX86U CON VELOCIDAD DE HASTA 5700 MBPS Y TECNOLOGÍA ASUS AIMESH",
+    "descripcion": "Router Wi-Fi 6 ASUS RT-AX86U con velocidad de hasta 5700 Mbps y tecnología ASUS AiMesh para una conectividad rápida y confiable en toda tu red.",
+    "precio": 249.99,
+    "stock": 11,
+    "imagen": "public/assets/products/tarjetas/tarjeta-4.png"
+  },
+  {
+    "id": 25,
+    "nombre": "CÁMARA DSLR CANON EOS 5D MARK IV CON SENSOR FULL FRAME DE 30.4 MP Y GRABACIÓN DE VIDEO 4K",
+    "descripcion": "Cámara DSLR Canon EOS 5D Mark IV con sensor full frame de 30.4 megapíxeles y capacidad de grabación de video 4K para fotografía y video de alta calidad.",
+    "precio": 2499.99,
+    "stock": 4,
+    "imagen": "public/assets/products/tarjetas/tarjeta-3.png"
+  },
+  {
+    "id": 26,
+    "nombre": "IMPRESORA MULTIFUNCIONAL HP OFFICEJET PRO 9025 CON IMPRESIÓN A DOBLE CARA Y CONECTIVIDAD WI-FI",
+    "descripcion": "Impresora multifuncional HP OfficeJet Pro 9025 con capacidad de impresión a doble cara y conectividad Wi-Fi para una productividad mejorada en la oficina.",
+    "precio": 199.99,
+    "stock": 8,
+    "imagen": "public/assets/products/tarjetas/tarjeta-1.png"
+  },
+  {
+    "id": 27,
+    "nombre": "ALTAVOZ BLUETOOTH JBL CHARGE 4 CON BATERÍA DE LARGA DURACIÓN Y CALIDAD DE SONIDO IMPRESIONANTE",
+    "descripcion": "Altavoz Bluetooth JBL Charge 4 con batería de larga duración y calidad de sonido impresionante para disfrutar de la música en cualquier lugar.",
+    "precio": 129.99,
+    "stock": 14,
+    "imagen": "public/assets/products/tarjetas/tarjeta-2.png"
+  },
+  {
+    "id": 28,
+    "nombre": "IMPRESORA 3D CREALITY CR-10 V3 CON GRAN ÁREA DE IMPRESIÓN Y PANTALLA TÁCTIL LCD",
+    "descripcion": "Impresora 3D Creality CR-10 V3 con una gran área de impresión y pantalla táctil LCD para proyectos de impresión 3D de alta calidad.",
+    "precio": 499.99,
+    "stock": 5,
+    "imagen": "public/assets/products/tarjetas/tarjeta-1.png"
+  },
+  {
+    "id": 29,
+    "nombre": "ROUTER MESH GOOGLE NEST WIFI PARA COBERTURA DE RED EN TODO EL HOGAR Y CONTROL POR VOZ",
+    "descripcion": "Router Mesh Google Nest WiFi para una cobertura de red en todo el hogar y control por voz para una experiencia de red conveniente.",
+    "precio": 199.99,
+    "stock": 10,
+    "imagen": "public/assets/products/tarjetas/tarjeta-7.png"
+  }
 ]

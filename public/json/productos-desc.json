@@ -1,74 +1,74 @@
 [
-    {
-        "id": 1,
-        "nombre": "Producto 1",
-        "descripcion": "Descripción del producto 1",
-        "precio": 10.99,
-        "stock": 10,
-        "imagen": "public/assets/products/product-1.png"
-    },
-    {
-        "id": 2,
-        "nombre": "Producto 2",
-        "descripcion": "Descripción del producto 2",
-        "precio": 20.99,
-        "stock": 10,
-        "imagen": "public/assets/products/product-2.png"
-    },
-    {
-        "id": 3,
-        "nombre": "Producto 3",
-        "descripcion": "Descripción del producto 3",
-        "precio": 30.99,
-        "stock": 10,
-        "imagen": "public/assets/products/product-3.png"
-    },
-    {
-        "id": 4,
-        "nombre": "Producto 1",
-        "descripcion": "Descripción del producto 1",
-        "precio": 10.99,
-        "stock": 10,
-        "imagen": "public/assets/products/product-4.png"
-    },
-    {
-        "id": 5,
-        "nombre": "Producto 2",
-        "descripcion": "Descripción del producto 2",
-        "precio": 20.99,
-        "stock": 10,
-        "imagen": "public/assets/products/product-5.png"
-    },
-    {
-        "id": 6,
-        "nombre": "Producto 3",
-        "descripcion": "Descripción del producto 3",
-        "precio": 30.99,
-        "stock": 10,
-        "imagen": "public/assets/products/product-6.png"
-    },
-    {
-        "id": 7,
-        "nombre": "Producto 1",
-        "descripcion": "Descripción del producto 1",
-        "precio": 10.99,
-        "stock": 10,
-        "imagen": "public/assets/products/product-1.png"
-    },
-    {
-        "id": 8,
-        "nombre": "Producto 2",
-        "descripcion": "Descripción del producto 2",
-        "precio": 20.99,
-        "stock": 10,
-        "imagen": "public/assets/products/product-2.png"
-    },
-    {
-        "id": 9,
-        "nombre": "Producto 3",
-        "descripcion": "Descripción del producto 3",
-        "precio": 30.99,
-        "stock": 10,
-        "imagen": "public/assets/products/product-3.png"
-    }
+  {
+    "id": 1,
+    "nombre": "PLACA BASE ASUS ROG STRIX B550-F GAMING CON WI-FI 6 Y BLUETOOTH 5.2 INTEGRADOS PARA JUEGOS DE ALTA GAMA",
+    "descripcion": "Placa base de alta gama para juegos con características avanzadas, soporte Wi-Fi 6 y Bluetooth 5.2 integrados para una conectividad superior.",
+    "precio": 199.99,
+    "stock": 10,
+    "imagen": "public/assets/products/product-1.png"
+  },
+  {
+    "id": 2,
+    "nombre": "TARJETA GRÁFICA NVIDIA GEFORCE RTX 3080 CON 10 GB DE VRAM GDDR6X PARA UN RENDIMIENTO EXTREMO EN JUEGOS",
+    "descripcion": "Tarjeta gráfica de alto rendimiento con 10 GB de VRAM GDDR6X para un rendimiento de juego excepcional y calidad de imagen impresionante.",
+    "precio": 799.99,
+    "stock": 5,
+    "imagen": "public/assets/products/product-2.png"
+  },
+  {
+    "id": 3,
+    "nombre": "PROCESADOR AMD RYZEN 9 5900X CON 12 NÚCLEOS Y 24 HILOS PARA UNA POTENCIA DE PROCESAMIENTO SIN IGUAL",
+    "descripcion": "Procesador de última generación con 12 núcleos y 24 hilos para una potencia de procesamiento excepcional y un rendimiento en multitarea incomparable.",
+    "precio": 449.99,
+    "stock": 8,
+    "imagen": "public/assets/products/product-3.png"
+  },
+  {
+    "id": 4,
+    "nombre": "DISCO DURO SSD SAMSUNG 1TB NVMe CON VELOCIDAD DE LECTURA DE HASTA 3500 MB/S PARA UN ALMACENAMIENTO RÁPIDO Y CONFIABLE",
+    "descripcion": "Unidad de estado sólido de alta velocidad con velocidad de lectura de hasta 3500 MB/s para un almacenamiento rápido y confiable de tus datos y archivos.",
+    "precio": 149.99,
+    "stock": 15,
+    "imagen": "public/assets/products/product-4.png"
+  },
+  {
+    "id": 5,
+    "nombre": "MONITOR GAMING ASUS ROG SWIFT PG279Q DE 27 PULGADAS CON RESOLUCIÓN QHD Y FRECUENCIA DE ACTUALIZACIÓN DE 165 HZ",
+    "descripcion": "Monitor de juego de 27 pulgadas con resolución QHD y una frecuencia de actualización de 165 Hz para una experiencia de juego suave y detallada.",
+    "precio": 599.99,
+    "stock": 7,
+    "imagen": "public/assets/products/product-5.png"
+  },
+  {
+    "id": 6,
+    "nombre": "Producto 3",
+    "descripcion": "Descripción del producto 3",
+    "precio": 30.99,
+    "stock": 10,
+    "imagen": "public/assets/products/product-6.png"
+  },
+  {
+    "id": 7,
+    "nombre": "Producto 1",
+    "descripcion": "Descripción del producto 1",
+    "precio": 10.99,
+    "stock": 10,
+    "imagen": "public/assets/products/product-1.png"
+  },
+  {
+    "id": 8,
+    "nombre": "Producto 2",
+    "descripcion": "Descripción del producto 2",
+    "precio": 20.99,
+    "stock": 10,
+    "imagen": "public/assets/products/product-2.png"
+  },
+  {
+    "id": 9,
+    "nombre": "Producto 3",
+    "descripcion": "Descripción del producto 3",
+    "precio": 30.99,
+    "stock": 10,
+    "imagen": "public/assets/products/product-3.png"
+  }
 ]

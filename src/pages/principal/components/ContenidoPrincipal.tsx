@@ -5,6 +5,7 @@ import GridProductos from './shared/GridProductos'
 import { Producto } from '../../../modules/productos/domain/producto'
 import { add, car, heart } from 'ionicons/icons'
 import CarruselBanner from './CarruselBanner'
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
 
 interface Props {
     productosPromos: Producto[];
@@ -63,13 +64,15 @@ const ContenidoPrincipal: React.FC<Props> = ({ productosPromos, productosNuevos,
             </div>
             <GridProductos productos={productos} loading={loading} setProducto={setProducto} />
 
-            <IonModal isOpen={producto != null} onDidDismiss={closeModal} initialBreakpoint={0.5} breakpoints={[0, 0.5, 0.75, 0.90]}>
+            <FloatingWhatsApp phoneNumber="948763653" accountName="Angel Garcia" chatMessage="Hola🤝 ¿en qué puedo ayudarte?" statusMessage="Normalmente responde en 5 min" darkMode />
+
+            <IonModal isOpen={producto != null} onDidDismiss={closeModal} initialBreakpoint={0.55} breakpoints={[0, 0.55, 0.75, 0.90]}>
                 <IonContent className="ion-padding">
-                    <div className="flex xs:flex-row flex-col font-sans">
-                        <div className="w-full h-60 xs:w-56 relative">
+                    <div className="flex xs:flex-row flex-col font-sans w-full">
+                        <div className="h-60 w-2/5 relative">
                             <img src={producto?.imagen} alt="" className="absolute inset-0 w-full h-full object-cover rounded-lg" loading="lazy" />
                         </div>
-                        <div className="flex-auto py-6 px-4">
+                        <div className="flex-auto py-6 px-4 w-3/5">
                             <div className="flex flex-wrap">
                                 <h1 className="flex-auto text-xl font-medium">
                                     {producto?.nombre}
@@ -82,22 +85,24 @@ const ContenidoPrincipal: React.FC<Props> = ({ productosPromos, productosNuevos,
                                     <IonLabel color={producto?.stock! < 5 ? 'danger' : 'success'}>{producto?.stock} en stock</IonLabel>
                                 </div>
                             </div>
-                            <div className="mt-4 mb-6 pb-6 border-b border-slate-200">
-                                <p className="text-sm text-slate-500">
-                                    {producto?.descripcion}
-                                </p>
-                            </div>
-                            <div className="flex space-x-4 mb-5 text-sm font-medium">
-                                <div className="flex-auto flex space-x-4">
-                                    <IonButton>
-                                        <IonIcon slot="start" icon={add}></IonIcon>
-                                        Agregar al carrito
-                                    </IonButton>
-                                </div>
-                                <IonButton fill='clear'>
-                                    <IonIcon slot="icon-only" icon={heart}></IonIcon>
+                        </div>
+                    </div>
+                    <div className='w-full'>
+                        <div className="mt-4 mb-6 pb-6 border-b border-slate-200">
+                            <p className="text-sm text-slate-500">
+                                {producto?.descripcion}
+                            </p>
+                        </div>
+                        <div className="flex space-x-4 mb-5 text-sm font-medium">
+                            <div className="flex-auto flex space-x-4">
+                                <IonButton>
+                                    <IonIcon slot="start" icon={add}></IonIcon>
+                                    Agregar al carrito
                                 </IonButton>
                             </div>
+                            <IonButton fill='clear'>
+                                <IonIcon slot="icon-only" icon={heart}></IonIcon>
+                            </IonButton>
                         </div>
                     </div>
                     <p className='mt-6 text-lg'>Detalles</p>
