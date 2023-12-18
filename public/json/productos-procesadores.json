@@ -41,42 +41,42 @@
   },
   {
     "id": 15,
-    "nombre": "Producto 3",
-    "descripcion": "Descripción del producto 3",
-    "precio": 30.99,
+    "nombre": "TELEVISOR LED SONY BRAVIA X900H DE 65 PULGADAS CON RESOLUCIÓN 4K Y DOLBY VISION PARA UNA EXPERIENCIA DE VISUALIZACIÓN INMERSIVA",
+    "descripcion": "Televisor LED de 65 pulgadas con resolución 4K y tecnología Dolby Vision que ofrece una experiencia de visualización inmersiva con colores vibrantes y detalles excepcionales. Perfecto para disfrutar de películas y juegos.",
+    "precio": 899.99,
     "stock": 10,
-    "imagen": "public/assets/products/procesadores/procesador-6.png"
+    "imagen": "public/assets/products/product-6.png"
   },
   {
     "id": 16,
-    "nombre": "Producto 1",
-    "descripcion": "Descripción del producto 1",
-    "precio": 10.99,
-    "stock": 10,
-    "imagen": "public/assets/products/procesadores/procesador-7.png"
+    "nombre": "PORTÁTIL DELL XPS 13 CON PROCESADOR INTEL CORE I7 DE 11ª GENERACIÓN Y PANTALLA TÁCTIL FULL HD",
+    "descripcion": "Portátil Dell XPS 13 con procesador Intel Core i7 de 11ª generación y pantalla táctil Full HD de 13 pulgadas. Ofrece un rendimiento excepcional y una experiencia de usuario fluida para trabajo y entretenimiento.",
+    "precio": 1299.99,
+    "stock": 8,
+    "imagen": "public/assets/products/product-7.png"
   },
   {
     "id": 17,
-    "nombre": "Producto 2",
-    "descripcion": "Descripción del producto 2",
-    "precio": 20.99,
-    "stock": 10,
-    "imagen": "public/assets/products/procesadores/procesador-8.png"
+    "nombre": "AURICULARES INALÁMBRICOS BOSE QUIETCOMFORT 35 II CON CANCELACIÓN DE RUIDO ACTIVA",
+    "descripcion": "Auriculares inalámbricos Bose QuietComfort 35 II con cancelación de ruido activa para disfrutar de una calidad de sonido excepcional y una experiencia auditiva sin distracciones. Ideales para viajes y trabajo.",
+    "precio": 299.99,
+    "stock": 15,
+    "imagen": "public/assets/products/product-8.png"
   },
   {
     "id": 18,
-    "nombre": "Producto 3",
-    "descripcion": "Descripción del producto 3",
-    "precio": 30.99,
-    "stock": 10,
-    "imagen": "public/assets/products/procesadores/procesador-9.png"
+    "nombre": "CÁMARA DSLR CANON EOS 5D MARK IV CON SENSOR DE 30.4 MP Y GRABACIÓN DE VIDEO EN 4K",
+    "descripcion": "Cámara DSLR Canon EOS 5D Mark IV con sensor de 30.4 megapíxeles y capacidad de grabación de video en 4K. Perfecta para fotógrafos y videógrafos profesionales que buscan calidad y versatilidad.",
+    "precio": 2499.99,
+    "stock": 7,
+    "imagen": "public/assets/products/product-9.png"
   },
   {
     "id": 19,
-    "nombre": "Producto 3",
-    "descripcion": "Descripción del producto 3",
-    "precio": 30.99,
-    "stock": 10,
-    "imagen": "public/assets/products/procesadores/procesador-10.png"
+    "nombre": "TABLETA SAMSUNG GALAXY TAB S7+ CON PANTALLA SUPER AMOLED DE 12.4 PULGADAS Y S PEN INCLUIDO",
+    "descripcion": "Tableta Samsung Galaxy Tab S7+ con pantalla Super AMOLED de 12.4 pulgadas y S Pen incluido para una experiencia de escritura y dibujo natural. Ideal para productividad y entretenimiento en movimiento.",
+    "precio": 799.99,
+    "stock": 12,
+    "imagen": "public/assets/products/product-10.png"
   }
 ]

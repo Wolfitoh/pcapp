@@ -23,10 +23,10 @@ const GridProductos: React.FC<GridProductosProps> = ({ productos, loading, setPr
                             <IonRow className="ion-justify-content-center w-full">
                                 {productos.map((producto) => (
                                     <IonCol
-                                        size-xs="12"
-                                        size-sm="6"
-                                        size-md="4"
-                                        size="3"
+                                        sizeXs="12"
+                                        sizeSm="6"
+                                        sizeLg="4"
+                                        sizeXl='3'
                                         key={producto.id}
                                     >
                                         <CardProduct producto={producto} setProducto={setProducto} />

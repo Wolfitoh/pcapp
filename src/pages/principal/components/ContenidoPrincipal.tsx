@@ -41,25 +41,25 @@ const ContenidoPrincipal: React.FC<Props> = ({ productosPromos, productosNuevos,
             <CarruselBanner />
             <div className='mt-10'>
                 <div className='float-left mb-4'>
-                    <h2 className='text-xl'>Nuevos Ingresos</h2>
+                    <h2 className='text-xl font-bold'>Nuevos Ingresos</h2>
                     <span className='text-gray-500'>¡Estos son nuestros nuevos ingresos!</span>
                 </div>
-                <IonButton className='float-right' fill="clear">ver más</IonButton>
+                <IonButton className='float-right font-bold' fill="clear">ver más</IonButton>
             </div>
             <SliderHorizontal productos={productosPromos} loading={loadingProductosPromos} setProducto={setProducto} />
 
             <div className='mt-4'>
                 <div className='float-left mb-4'>
-                    <h2 className='text-xl'>Lo más vendido</h2>
+                    <h2 className='text-xl font-bold'>Lo más vendido</h2>
                     <span className='text-gray-500'>Lo que nuestros usuarios prefieren</span>
                 </div>
-                <IonButton className='float-right' fill="clear">ver más</IonButton>
+                <IonButton className='float-right font-bold' fill="clear">ver más</IonButton>
             </div>
 
             <SliderHorizontal productos={productosNuevos} loading={loadingProductosNuevos} setProducto={setProducto} />
 
             <div className='mb-2 mt-4'>
-                <h2 className='text-xl'>Promociones</h2>
+                <h2 className='text-xl font-bold'>Promociones</h2>
                 <span className='text-gray-500'>¡Nuestras promociones y ofertas!</span>
             </div>
             <GridProductos productos={productos} loading={loading} setProducto={setProducto} />
